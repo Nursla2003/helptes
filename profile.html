@@ -1,0 +1,210 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelpTes. Жаңа өмір сыйла</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header class="header header-main">
+            <div class="container">
+                <div class="header__inner">
+                    <a href="" class="logo">
+                        <img src="images/logo.png" alt="" class="logo__img">
+                    </a>
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__list-item"><a href="index.html" class="menu__list-link">Басты бет</a>
+                            </li>
+                            <li class="menu__list-item"><a href="about.html" class="menu__list-link">Біз туралы</a>
+                            </li>
+                            <li class="menu__list-item"><a href="services.html" class="menu__list-link">Қызметтер</a>
+                            </li>
+                            <li class="menu__list-item"><a href="contact.html" class="menu__list-link">Байланыс</a>
+                            </li>
+                            <li class="menu__list-item"><a href="profile.html" class="menu__list-link">Профиль</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="top">
+                <div class="container">
+                    <h1 class="title">
+                        Көмек қолын соз </h1>
+                    <a class="top__link" href="#">
+                        ЖАҢА ӨМІР СЫЙЛА!
+                    </a>
+                </div>
+            </section>
+            <div class="slider">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background-image: url(images/slide-1.jpg);"></div>
+                        <div class="swiper-slide" style="background-image: url(images/slide-2.jpg);"></div>
+                        <div class="swiper-slide" style="background-image: url(images/slide-3.jpg);"></div>
+                        <div class="swiper-slide" style="background-image: url(images/slide-4.jpg);"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="row">
+                <section class="section">
+                  <header_form>
+                    <h3>Тіркеу</h3>
+                    <h4>Төмендегі ақпараттарды толтыруыңызды өтінеміз</h4>
+                  </header_form>
+                  <main>
+                    <form>
+                      <div class="form-item box-item">
+                        <input type="text" name="name" placeholder="Атыңыз" data-required>
+                        <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
+                      </div>
+                      <div class="form-item box-item">
+                        <input type="text" name="name" placeholder="Тегіңіз" data-required>
+                        <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
+                      </div>
+                      <div class="form-item box-item">
+                        <input type="email" name="email" placeholder="Жеке email" data-email data-required>
+                        <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
+                        <small class="errorEmail"><i class="fa fa-asterisk" aria-hidden="true"></i> email is not valid</small>
+                      </div>
+                      <div class="form-item box-item">
+                        <div class="form-item-triple">
+                          <div class="radio-label"> 
+                            <label class="label">Жыныс</label>
+                          </div>
+                          <div class="form-item"> 
+                            <input id="Male" type="radio" name="gender" value="Ер" data-once>
+                            <label for="Male">Ер</label>
+                          </div>
+                          <div class="form-item"> 
+                            <input id="Female" type="radio" name="gender" value="Әйел" data-once>
+                            <label for="Female">Әйел</label>
+                          </div>
+                        </div>
+                        <small class="errorOnce"><i class="fa fa-asterisk" aria-hidden="true"></i> choose at least one</small>
+                      </div>
+                      
+                      <div class="form-item box-item">
+                        <input type="number" name="address" placeholder="Толық жасыңызды енгізіңіз" data-required>
+                        <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
+                      </div>
+                      <div class="form-item-double box-item">
+                        <div class="form-item ">
+                          <input type="number" name="Number" placeholder="Телефон нөміріңіз" data-required data-number>
+                          <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
+                          <small class="errorNum"><i class="fa fa-asterisk" aria-hidden="true"></i> must be a number</small>
+                        </div>
+                        <div class="form-item box-item">
+                            <input type="text" name="" placeholder="Құпиясөз" data-required>
+                            <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
+                          </div>
+                          <div class="form-item box-item">
+                            <input type="text" name="" placeholder="Құпиясөзді қайталаңыз" data-required>
+                            <small class="errorReq"><i class="fa fa-asterisk" aria-hidden="true"></i> required field</small>
+                          </div>
+                        
+                      </div>
+                      
+                      <div class="form-item">
+                        <span id="submit" class="submit">Тіркелу</span>
+                      </div>
+                    </form>
+                  </main>
+                  <footer_form>
+                    <p>Сізде аккаунт бар ма? <a href="singin.html">Кіру</a></p>
+                  </footer_form>
+                  <i class="wave"></i>
+                </section>
+              </div>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <nav class="footer__menu">
+                    <ul class="footer__menu-list">
+                        <li class="footer__menu-item"><a href="#" class="footer__menu-link"></a>
+                            <p class="footer__menu-title">Жаңалықтар</p>
+                        </li>
+                        <li class="footer__menu-item"><a href="#" class="footer__menu-link">Жалпы медицина</a>
+                        </li>
+                        <li class="footer__menu-item"><a href="#" class="footer__menu-link">Донорлық қызмет</a>
+                        </li>
+                        <li class="footer__menu-item"><a href="#" class="footer__menu-link">Анализдік көрсеткіш</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__menu-list">
+                        <li class="footer__menu-item"><a href="#" class="footer__menu-link"></a>
+                            <p class="footer__menu-title">Ресурстар</p>
+                        </li>
+                        <li class="footer__menu-item"><a href="#" class="footer__menu-link">Ұлттық банк</a>
+                        </li>
+                        <li class="footer__menu-item"><a href="#" class="footer__menu-link">Орталық база</a>
+                        </li>
+                        <li class="footer__menu-item"><a href="#" class="footer__menu-link">Қайырымдылық қор</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__menu-list">
+                        <li class="footer__menu-item"><a href="#" class="footer__menu-link"></a>
+                            <p class="footer__menu-title">Базамен жұмыс</p>
+                        </li>
+                        <li class="footer__menu-item"><a href="#" class="footer__menu-link">Жеке мәліметтер</a>
+                        </li>
+                        <li class="footer__menu-item"><a href="#" class="footer__menu-link">Тіркеу бөлімі</a>
+                        </li>
+                        <li class="footer__menu-item"><a href="#" class="footer__menu-link">Диагноздар тақтасы</a>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="app">
+                    <li class="app__item">
+                        <a class="app__item-link" href="">
+                            <img class="app__item-img" src="images/googleplay.png" alt="">
+                        </a>
+                    </li>
+                    <li class="app__item">
+                        <a class="app__item-link" href="">
+                            <img class="app__item-img" src="images/appstore.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+                <div class="footer__copy">
+                    <p class="footer__copy-text">
+                        Барлық құқықтар заңмен қатал қорғалған.
+                    </p>
+                    <p class="footer__copy-text">
+                        ©NurBota Industries, Алматы 2023ж.
+                    </p>
+                </div>
+                <nav class="copy__nav">
+                    <ul class="copy__nav-list">
+                        <li class="copy__nav-item">
+                            <a class="copy__nav-link" href="#">Қызмет көрсету шарттары</a>
+                        </li>
+                        <li class="copy__nav-item">
+                            <a class="copy__nav-link" href="#">Құпиялылық саясаты</a>
+                        </li>
+                        <li class="copy__nav-item">
+                            <a class="copy__nav-link" href="#">Біздің жеке ақпаратымызды сатпаңыз</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
